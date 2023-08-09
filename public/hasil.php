@@ -20,7 +20,7 @@
       return $sum; // 1
     }
 
-    // Operation : 3
+    // Operation : 4
     // Big O : O(1)
     function cara3($n){
       return ($n + 1) * $n / 2; // 4
@@ -29,6 +29,13 @@
   ?>
   <table>
     <tr>
+      <td>Angka</td>
+      <td>: <?= $_POST['a1'] ?></td>
+    </tr>
+    <tr>
+      <td><hr></td>
+    </tr>
+    <tr>
       <td>Cara 1</td>
       <td>
         <?php $starttime = microtime(true); ?>
@@ -36,10 +43,20 @@
       </td>
     </tr>
     <tr>
-      <td>Execution time</td>
+      <td>Operation</td>
+      <td>: 1 + (1 * n) + 1 = n + 2</td>
+    </tr>
+    <tr>
+      <td>Big O</td>
+      <td>: O(n)</td>
+    </tr>
+    <tr>
+      <td>Execution time (s)</td>
       <td>: <?= microtime(true) - $starttime; ?></td>
     </tr>
-    <tr></tr>
+    <tr>
+      <td><hr></td>
+    </tr>
     <tr>
       <td>Cara 3</td>
       <td>
@@ -48,13 +65,21 @@
       </td>
     </tr>
     <tr>
-      <td>Execution time</td>
+      <td>Operation</td>
+      <td>: 4</td>
+    </tr>
+    <tr>
+      <td>Big O</td>
+      <td>: O(1)</td>
+    </tr>
+    <tr>
+      <td>Execution time (s)</td>
       <td>: <?= microtime(true) - $starttime; ?></td>
     </tr>
   </table>
 
 
   <br>
-  <a href="http://localhost/kompre"><button>Kembali</button></a>
+  <a href="./"><button>Kembali</button></a>
 </body>
 </html>
