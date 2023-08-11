@@ -80,6 +80,6 @@
 
 
   <br>
-  <a href="./"><button>Kembali</button></a>
+  <a href="./../.."><button>Kembali</button></a>
 </body>
 </html>
