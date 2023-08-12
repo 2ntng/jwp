@@ -133,12 +133,10 @@ $contacts = mysqli_fetch_all($conn->query($sql), MYSQLI_ASSOC);
     </div>
 </div>
 
-
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 
-<?php 
+<?php
 $sql = "WITH Ratings AS (
             SELECT 1 AS n UNION SELECT 2 UNION SELECT 3 UNION SELECT 4 UNION SELECT 5
         )
@@ -152,6 +150,8 @@ $sql = "WITH Ratings AS (
 $reviews_count = mysqli_fetch_all($conn->query($sql), MYSQLI_NUM);
 $reviews_count = array_map(null, ...$reviews_count); // transpose array
 ?>
+
+<!-- Chart -->
 <script type="text/javascript">
     const ctx = document.getElementById('myChart');
     new Chart(ctx, {
@@ -213,3 +213,5 @@ $reviews_count = array_map(null, ...$reviews_count); // transpose array
         }
     });
 </script>
+
+<?php require("footer.php"); ?>
