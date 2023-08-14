@@ -1,9 +1,9 @@
 <?php
-require("header.php");
+require("layout/header.php");
 require("config/database.php");
 $profile_id = isset($_GET['id']) ? $_GET['id'] : 1;
 
-require("nav.php");
+require("layout/nav.php");
 ?>
 
 
@@ -214,4 +214,4 @@ $reviews_count = array_map(null, ...$reviews_count); // transpose array
     });
 </script>
 
-<?php require("footer.php"); ?>
+<?php require("layout/footer.php"); ?>
