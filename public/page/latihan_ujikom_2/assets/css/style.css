@@ -1,0 +1,10 @@
+.custom-container{
+	margin: auto;
+	width: 60%;
+	background: rgb(238, 238, 255);
+	padding: 10px;
+}
+.tiket{
+	background-size: contain;
+	background-position: right !important;
+}
