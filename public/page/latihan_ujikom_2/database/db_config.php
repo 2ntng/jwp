@@ -2,7 +2,7 @@
   $host = "localhost";
   $user = "root";
   $pass = "";
-  $dbname = "serkom_praktik";
+  $dbname = "unila_akap";
 
   $conn = mysqli_connect($host, $user, $pass, $dbname);
 ?>
